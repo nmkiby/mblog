@@ -1,15 +1,15 @@
 /*
 * @Author: moling
 * @Date:   2016-05-06 10:51:29
-* @Last Modified by:   anchen
-* @Last Modified time: 2016-07-14 23:10:07
+* @Last Modified by:   wangweipeng
+* @Last Modified time: 2017.04.04
 */
 drop database if exists mblog;
 
 create database mblog;
 
 use mblog;
-grant select, insert, update, delete on mblog.* to 'moling'@'localhost' identified by 'www-data';
+grant select, insert, update, delete on mblog.* to 'wangweipeng'@'localhost' identified by 'wwp-123789';
 
 create table users (
     `id` varchar(50) not null,
