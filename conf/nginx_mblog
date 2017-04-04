@@ -1,10 +1,10 @@
 server {
     listen     80;
-    root       /home/ubuntu/mblog/www;
-    access_log /home/ubuntu/mblog/log/access.log;
-    error_log  /home/ubuntu/mblog/log/error.log;
+    root       /home/www/mblog/www;
+    access_log /home/www/mblog/log/access.log;
+    error_log  /home/www/mblog/log/error.log;
 
-    # server_name  www.qiangtaili.com;
+    # server_name  www.wangweipeng.com;
 
     client_max_body_size 1m;
 
@@ -16,11 +16,11 @@ server {
     sendfile on;
 
     location /favicon.ico {
-        root /home/ubuntu/mblog/www/app/static/img;
+        root /home/wwp/mblog/www/app/static/img;
     }
 
     location ~ ^\/static\/.*$ {
-        root /home/ubuntu/mblog/www/app;
+        root /home/wwp/mblog/www/app;
     }
 
     location / {
